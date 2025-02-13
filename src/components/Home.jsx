@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./Hero";
 import About from "./About";
 import { Link } from "react-router";
+import ContactForm from "./ContactForm";
 
 const Home = () => {
   return (
@@ -20,13 +21,18 @@ const Home = () => {
             communities.
           </p>
           <div className="read-more-btn">
-            <Link to='/about'>
+            <Link to="/about">
               <button>Read more about me</button>
             </Link>
           </div>
+           <h2> You can checkout how to <a href="/work-with-me">Work with me</a> and
+           my <a href="/my-portfolio">Portfolio</a> on projects I’ve worked on</h2>
         </div>
+
       </section>
-      <section></section>
+      <section>
+        <ContactForm/>
+      </section>
     </>
   );
 };

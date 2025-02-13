@@ -11,16 +11,15 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <NavBar/>
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/my-portfolio" element={<MyPortfolio/>} />
-          <Route path="/work-with-me" element={<WorkWithMe/>} />
+          <Route path="/about" element={<About />} />
+          <Route path="/my-portfolio" element={<MyPortfolio />} />
+          <Route path="/work-with-me" element={<WorkWithMe />} />
           {/* <Route path="/contact" element={<Contact />} /> */}
         </Routes>
-      </BrowserRouter>
-      <Hero />
+      </BrowserRouter> 
     </>
   );
 }
